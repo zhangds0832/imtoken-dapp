@@ -1,0 +1,103 @@
+.swap-balance {
+  padding: 30px 25px;
+}
+.swap-balance span {
+  color: #6b6b6b;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.swap-balance span:last-child {
+  color: #ffffff;
+}
+
+.swap-line {
+  display: flex;
+  text-align: center;
+  border-top: 1px solid #6b6b6b;
+  position: relative;
+}
+
+.swap-line .fun-icon-swap {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #bbff2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  margin: -16px auto 0 auto;
+}
+
+.swap-line img {
+  width: 20px;
+  height: 20px;
+}
+
+.swap-token {
+  width: 100%;
+  height: 108px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.swap-input {
+  width: 230px;
+  height: 50px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  outline: none;
+  font-size: 20px;
+  text-align: right;
+  caret-color: #bbff2e;
+}
+
+.swap-money {
+  width: 230px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: right;
+  line-height: 50px;
+}
+
+.swap-btn-box {
+  display: flex;
+  margin-top: 30px;
+}
+
+.swap-btn {
+  width: 85%;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.swap-info {
+  padding: 20px 20px;
+}
+
+.swap-info li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.swap-info .swap-title {
+  color: #6b6b6b;
+}
+
+.swap-info .swap-text {
+  color: #ffffff;
+}
+
+.swap-info span {
+  font-size: 14px;
+}

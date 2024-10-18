@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* 去掉边框 */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* 防止出现滚动条 */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* border-bottom: 1px solid #f0f0f0; */
+}
+
+.chatgpt {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.connected-wallet {
+  height: 30px;
+  border: none;
+  background-color: #bbff2e;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.address-view {
+  height: 30px;
+  border: none;
+  background-color: #bbff2e;
+  padding: 0 10px;
+  border-radius: 4px;
+  line-height: 30px;
+}
+
+.address-look {
+  display: flex;
+  align-items: center;
+}
+
+.address-out {
+  border: none;
+  height: 30px;
+  background-color: #bbff2e;
+  padding-right: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.fun-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0 40px 0;
+}
+
+.fun-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #bbff2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fun-icon1 {
+  transform: rotate(180deg);
+}
+
+.fun-list li {
+  text-align: center;
+}
+
+.fun-list img {
+  width: 30px;
+  height: 30px;
+}
+
+.fun-list span {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.my-banlance {
+  font-weight: bold;
+  font-size: 40px;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.app-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  padding: 0 0px;
+}
+
+.app-list p {
+  font-size: 15px;
+  color: #909090;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.app-list .app-actv {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.token-name {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.token-logo {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.token-info {
+  display: flex;
+  align-items: center;
+}
+
+.token-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 25px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.send-p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.send-address {
+  width: 85%;
+  height: 100px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 10px;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.tx-address {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #ffffff;
+  padding-right: 10px;
+}
+
+.fl-center {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 15px;
+  background-color: #1a1a1a;
+}
+
+.input-box-send {
+  display: flex;
+}
+
+.send-main .token-num {
+  border: none;
+  background-color: #000000;
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 50px;
+  border-bottom: 1px solid #bbff2e;
+  outline: none;
+  display: flex;
+  color: #ffffff;
+  padding-left: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  caret-color: #bbff2e;
+  margin: 0 auto;
+
+  color: #ffffff;
+  /* border: 1px solid red; */
+}
+
+.token-send-k {
+  width: 10px;
+  height: 10px;
+  background-color: #bbff2e;
+  box-shadow: rgba(187, 255, 46, 0.2) 0px 7px 29px 0px;
+  /* position: absolute;
+  left: 40px;
+  top: 24px; */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1; /* 完全可见 */
+  }
+  50% {
+    opacity: 0; /* 完全透明 */
+  }
+}
+
+.send-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+}
+
+.send-btn {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  margin: 30px auto 0 auto;
+  background-color: #bbff2e;
+}
+
+.imai-balance {
+  color: #909090;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 10%;
+}
+
+.send-info {
+  color: #909090;
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.footer {
+  color: #ffffff;
+  font-size: 12px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.receive-main {
+  padding: 1px;
+}
+
+.receive-main .qr-box {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 80px auto 10px auto;
+}
+
+.receive-main .receive {
+  padding: 0 20px;
+  position: fixed;
+  bottom: 50px;
+}
+
+.receive-box {
+  display: flex;
+}
+
+.receive-box > p {
+  width: 60%; /* 设置一个固定宽度的容器 */
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  word-wrap: break-word; /* 旧的属性 */
+  overflow-wrap: break-word; /* 新的推荐属性 */
+}
+
+.copyBtn {
+  width: 50px;
+  height: 20px;
+  border: none;
+  background-color: #bbff2e;
+  border-radius: 4px;
+}
